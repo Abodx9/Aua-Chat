@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+.theme-icon {
+  width: 32px; /* Adjust the width as per your preference */
+  height: 32px; /* Adjust the height as per your preference */
+}
+
+body {
+  background: #f9f4f4;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox will automatically adjust the size, but we should avoid fixed widths for full responsiveness */
+.form-header {
+  display: flex;
+  flex-direction: column; /* Stack children vertically on smaller screens */
+  width: 90%;
+  max-width: 1000px; /* Max width for large screens */
+  margin: 3em auto 0em;
+  padding: 2em;
+  background: rgba(24, 70, 71, 0.78);
+  color: #000000;
+  border-radius: 2em 2em 0em 0em;
+}
+
+.form-header__title {
+  text-align: center;
+}
+
+/* The section now uses max-width and width in percentages for flexibility */
+section {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: none;
+}
+
+
+.form-window {
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 2em 2em 0em 0em;
+  padding: 2em 1em 1em 1em;
+  margin-top: -30px;
+  background: #d5d5cb;
+  border-color: #dddddd;
+  box-shadow: inset 0px -29px 29px -16px rgba(101, 101, 101, 0.15);
+}
+
+.pat-bubble {
+  background: #ffffff;
+  order: 0;
+  flex: 0 1 auto;
+  padding: 1em;
+  margin: 0.5em 0;
+  color: #f12f2f;
+  font-weight: bold;
+  border-radius: 0em 2em 2em 2em;
+  border: 1px solid #cccccc;
+  font-size: 1em;
+}
+.bot-bubble {
+  display: flex;
+  background: #9c6789;
+  color: #ffffff;
+  order: 0;
+  flex: 0 1 auto;
+  border-radius: 2em 0em 2em 2em;
+}
+
+/* Änderungen für Benutzer-Nachrichten */
+.user-bubble {
+  align-self: flex-end; /* Rechts ausrichten */
+  border-radius: 2em 2em 0em 2em; /* Ecken anpassen */
+}
+
+/* Änderungen für Bot-Nachrichten */
+.bot-bubble {
+  align-self: flex-start; /* Links ausrichten */
+  border-radius: 2em 2em 2em 0em; /* Ecken anpassen */
+}
+
+.user-entry {
+  padding: 1em;
+  border-radius: 0em 0em 2em 2em;
+  border: 1px solid #cccccc;
+}
+.user-entry__input {
+  width: calc(100% - 50px - 1em);
+  height: 40px;
+  border-radius: 1em;
+  border: 1px solid #0a0a0a;
+  font-weight: bold;
+  padding-left: 1em;
+  font-size: 1em;
+  color: #333333;
+  margin-right: 10px;
+}
+.user-entry__submit {
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  background: #91b6c7;
+  color: #070707;
+  font-size: 20px;
+}
+
+.camera-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.theme-icon {
+  position: absolute; /* Ermöglicht die Positionierung an einer exakten Stelle */
+  top: 10px; /* Abstand vom oberen Rand des Containers */
+  right: 10px; /* Abstand vom rechten Rand des Containers */
+  cursor: pointer; /* Zeigt an, dass es anklickbar ist */
+}

@@ -1,0 +1,164 @@
+/* Grundlegende Box-Sizing-Einstellung */
+* {
+  box-sizing: border-box;
+}
+
+/* Neon-Effekt für Titel (auskommentiert, wenn nicht benötigt)
+.neon-glow {
+  font-size: 40px;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF00FF, 0 0 40px #FF00FF, 0 0 50px #FF00FF, 0 0 60px #FF00FF, 0 0 70px #FF00FF;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FF00FF, 0 0 40px #FF00FF, 0 0 50px #FF00FF, 0 0 60px #FF00FF, 0 0 70px #FF00FF;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF00FF, 0 0 50px #FF00FF, 0 0 60px #FF00FF, 0 0 70px #FF00FF, 0 0 80px #FF00FF;
+  }
+}
+*/
+
+/* Styling für das Thema-Icon */
+.theme-icon {
+  width: 32px; /* Breite anpassen */
+  height: 32px; /* Höhe anpassen */
+}
+
+/* Grundeinstellungen für den Hintergrund und die Schrift */
+body {
+  background: #121212;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout des Headers mit flexibler Breite */
+.form-header {
+  display: flex;
+  flex-direction: column; /* Stapelt die Kinder vertikal */
+  width: 90%; /* Prozentuale Breite */
+  max-width: 1000px; /* Maximale Breite für große Bildschirme */
+  margin: 3em auto 0em;
+  padding: 2em;
+  background: #333333;
+  color: #ee0a64;
+  border-radius: 2em 2em 0em 0em;
+}
+
+/* Zentrierter Titel im Header */
+.form-header__title {
+  text-align: center;
+}
+
+/* Flexibles Layout für den Abschnitt */
+section {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: none;
+}
+
+/* Styling für das Chat-Fenster */
+.form-window {
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 2em 2em 0em 0em;
+  padding: 2em 1em 1em 1em;
+  margin-top: -30px;
+  background: #090909;
+  border-color: #2a2a29;
+  box-shadow: inset 0px -29px 29px -16px rgba(101, 101, 101, 0.15);
+}
+
+/* Styling für die Sprechblasen */
+.pat-bubble {
+  background: #fafbfb;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: flex-start;
+  padding: 1em;
+  margin: 0.5em 0;
+  color: #080808;
+  font-weight: bold;
+  border-radius: 0em 2em 2em 2em;
+  border: 1px solid #cccccc;
+  font-size: 1em;
+}
+
+/* Bot-Sprechblasen, links ausgerichtet */
+.bot-bubble {
+  display: flex;
+  background: #000000;
+  color: #ffffff;
+  align-self: flex-start; /* Links ausrichten */
+  order: 0;
+  flex: 0 1 auto;
+  border-radius: 2em 2em 2em 0em; /* Ecken anpassen */
+}
+
+/* Benutzer-Sprechblasen, rechts ausgerichtet */
+.user-bubble {
+  display: flex;
+  background: #00bfff;
+  color: #ffffff;
+  align-self: flex-end; /* Rechts ausrichten */
+  order: 0;
+  flex: 0 1 auto;
+  border-radius: 2em 2em 0em 2em; /* Ecken anpassen */
+}
+
+/* Eingabebereich */
+.user-entry {
+  padding: 1em;
+  border-radius: 0em 0em 2em 2em;
+  border: 1px solid #cccccc;
+}
+
+/* Eingabefeld */
+.user-entry__input {
+  width: calc(100% - 50px - 1em);
+  height: 40px;
+  border-radius: 1em;
+  border: 1px solid #0a0a0a;
+  font-weight: bold;
+  padding-left: 1em;
+  font-size: 1em;
+  color: #333333;
+  margin-right: 10px;
+}
+
+/* Sende-Button */
+.user-entry__submit {
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  background: #ee0a64;
+  color: #070707;
+  font-size: 20px;
+}
+
+/* Kamera-Icon */
+.camera-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Textfarbe des Chatbots im Begrüßungsabsatz */
+.p-chatbot {
+  color: white;
+}
+
+/* Styling für das Thema-Icon */
+.theme-icon {
+  position: absolute; /* Ermöglicht die Positionierung an einer exakten Stelle */
+  top: 10px; /* Abstand vom oberen Rand des Containers */
+  right: 10px; /* Abstand vom rechten Rand des Containers */
+  cursor: pointer; /* Zeigt an, dass es anklickbar ist */
+}

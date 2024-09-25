@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ChatBot3</title>
+  <meta name="description" content="Web designer and front-end developer">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'><link rel="stylesheet" href="frontend/styles/style.css">
+
+</head>
+<body>
+  <div class="nav-header">
+    <i class="fa fa-bars fa-3x"></i>
+    <div class="header-links">
+      <ul>
+        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end navbar header -->
+
+  <!-- sidebar slider -->
+  <div class="nav-screen">
+    <i class="fa fa-times fa-3x"></i>
+    <div class="nav-container">
+      <div class="nav-links">
+        <ul id='myMenu'>
+          <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="fullpage">
+
+
+
+    <div class="section aboutme" data-anchor="aboutme">
+      <div class="opaque-bg animated fadeInDown">
+        <h1 style="color:white">AuaChat<span style="color:#FF6363">/</span>3</h1>
+        <p><span id="welcomeText"></span><span class="blinking-cursor">|</span></p>
+      </div>
+      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+    </div>
+
+
+
+    <div class="section" data-anchor="skills">
+      <div class="content">
+
+        <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT</h1>
+        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, This is our Home Website! We are students at HTW Berlin University developing a smart bot to assist with disease diagnosis.</p>
+
+        <h1>Introducing AuaChat, your AI-powered health assistant!</h1>
+        <p>Confused about your symptoms? AuaChat can help! Powered by cutting-edge Natural Language Processing (NLP), AuaChat analyzes your symptoms and provides insights and information.</p>
+
+        <h1>Here's what AuaChat can do for you:</h1>
+        <ul>
+          <li><strong>Understand your symptoms:</strong> Simply describe what you're experiencing, and AuaChat will leverage its advanced NLP capabilities to understand your concerns.</li>
+          <li><strong>Offer potential explanations:</strong> AuaChat will provide a list of possible diagnoses based on your symptoms.</li>
+        </ul>
+
+        <h1>AuaChat is: <br></h1>
+        <ul>
+          <li><strong>Fast and convenient:</strong> Get insights into your symptoms anytime, anywhere.</li>
+          <li><strong>Easy to use:</strong> Simply chat with AuaChat in a natural way.</li>
+          <li><strong>Informative:</strong> Gain valuable knowledge about your health.</li>
+        </ul>
+
+        <p class="wow flash" data-wow-delay="0.5s" style="color: rgba(255,8,0,0.78);font-size: 25px">
+          <strong><br><br> Please note that AuaChat does not replace professional medical advice or diagnosis. Always consult a qualified healthcare provider for any medical concerns.</strong>
+        </p>
+            <div class="hidden">
+              <input type="text" class="form-control" id="human" name="human" placeholder="">
+            </div>
+            <div class="wow fadeInUp" data-wow-delay="1s">
+              <button type="button" id="submit" name="submit" class="btn btn-lg" onclick="openchat()">I Understand</button>
+
+  <script>
+    function openchat() {
+      window.location.href = "frontend/chatbot.html";
+    }
+  </script>
+            </div>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+<script  src="frontend/js/script.js"></script>
+
+</body>
+</html>
