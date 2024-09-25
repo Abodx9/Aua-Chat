@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/light.css" id="theme-styles" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+<div class="container" style="position: relative;">
+    <h1>Welcome to AuaChat!</h1>
+    <img src="assets/theme.png" alt="Icon" class="theme-icon" id="theme-icon">
+    <div>
+        <p class="p-chatbot">Start a conversation now!</p>
+    </div>
+</div>
+<header class="form-header">
+    <div class="form-header__title">
+        <h1 class="neon-glow">AuaChat</h1>
+    </div>
+</header>
+
+<main>
+    <section class="form-window" id="chat-window">
+        <div class="pat-bubble user-bubble">I'm not feeling good :(.</div>
+        <div class="pat-bubble bot-bubble" id="bot-response">How can I help you?</div>
+    </section>
+
+    <section class="user-entry">
+        <form id="chat-form">
+            <input type="text" class="user-entry__input" id="user-input" placeholder="Enter your symptoms...">
+            <button type="submit" class="user-entry__submit" value="Submit">➢</button>
+            <input type="file" id="file-input" accept="image/*" style="display:none;">
+        </form>
+    </section>
+</main>
+
+<footer></footer>
+<script>
+    const sty = document.getElementById('theme-icon');
+    const themeStyles = document.getElementById('theme-styles');
+    const cameraIcon = document.getElementById('camera-icon');
+
+    sty.addEventListener('click', () => {
+        if (themeStyles.href.includes('styles/light.css')) {
+            themeStyles.href = 'styles/dark.css';
+            cameraIcon.src = 'assets/dark.png';
+        } else {
+            themeStyles.href = 'styles/light.css';
+            cameraIcon.src = 'assets/light.png';
+        }
+    });
+</script>
+<script src='js/chatbot.js'></script>
+</body>
+</html>
