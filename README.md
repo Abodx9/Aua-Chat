@@ -12,6 +12,10 @@ Dieses Repository enthält die Implementierung eines Chatbots, der auf dem Phi-2
 - `frontend/`: Enthält die komplette Frontend-Implementierung
   - HTML, CSS und JavaScript-Dateien für die Benutzeroberfläche
   - Responsives Design für optimale Nutzung auf Desktop und Mobilgeräten
+ 
+## Datensatz
+
+Für das Training dieses Modells wurde der [SymptomsXDiagnosis (SXD) Datensatz von Kaggle](https://www.kaggle.com/datasets/abod0x/symptomsxdiagnose-sxd) verwendet. Dieser Datensatz bietet eine umfangreiche Sammlung von Symptom-Diagnose-Korrelationen, die es dem Modell ermöglichen, fundierte Einschätzungen zu geben.
 
 ## Backend-Integration
 
