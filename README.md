@@ -5,6 +5,9 @@ Ein fortschrittlicher Chatbot zur Unterstützung bei der Symptom-Diagnose, basie
 
 Dieses Repository enthält die Implementierung eines Chatbots, der auf dem Phi-2 Large Language Model (LLM) aufbaut. Der Chatbot ist darauf spezialisiert, Benutzer bei der ersten Einschätzung ihrer Symptome zu unterstützen und mögliche Diagnosen vorzuschlagen.
 
+<img width="1878" height="868" alt="image" src="https://github.com/user-attachments/assets/3a04f9ff-ef66-43f6-8c03-874adbda6b37" />
+
+
 
 ## Inhalt des Repositories
 
